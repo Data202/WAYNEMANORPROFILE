@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:italic;
+  font-size:x-large;
+  background-color: rgb(29, 76, 218);
+  padding: 0px 0px 20px 5px;
+}
+
+span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 0px solid blue;  
+  background-color: rgba(139, 216, 98, 0.454); 
+}
+
+.hero-banner{
+  background-image:url(../WAYNEMANORPROFILE/images/02-hero-bg.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.header{
+  padding: 25px;
+  background-color: rgb(29, 76, 218);
+  font-size: 20px;
+}
+
+a {
+  color: #2047b9;
+  text-decoration: underline;
+}
+
+ol {
+list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  float: right;
+  padding-top: 60px;
+  }
+
+  a {
+  display: block;
+  padding: 10px;
+  }
+   a:link {color: rgb(7, 37, 169);}  
+   a:visited {color: #0a900a}  
+   a:hover {color: #FCFC0C}  
+   a:active {color: #895cd1}  
+  
+h6 {
+  text-align: left;
+  color: #895cd1;
+  position: absolute;
+  right: 0px;
+  width: 530px;
+  border-left: 3px solid #000000;
+  padding: 10px;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  image-orientation: 180deg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
