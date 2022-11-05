@@ -2,83 +2,22 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: rgb(255, 255, 255);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style:italic;
-  font-size:x-large;
-  background-color: rgb(29, 76, 218);
-  padding: 0px 0px 20px 5px;
-}
-
-span.a {
-  display: inline; /* the default for span */
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 0px solid blue;  
-  background-color: rgba(139, 216, 98, 0.454); 
-}
-
-.hero-banner{
-  background-image:url(../WAYNEMANORPROFILE/images/02-hero-bg.jpg);
-  background-size: cover;
-  background-blend-mode: soft-light;
-  min-height: 30vh;
-  color: var(--light);
-  padding: 2% 6%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
-}
-
-.header{
-  padding: 25px;
-  background-color: rgb(29, 76, 218);
-  font-size: 20px;
-}
-
-a {
-  color: #2047b9;
-  text-decoration: underline;
-}
-
-ol {
-list-style-type: none;
-}
-
-li {
-  display: inline-block;
-  float: right;
-  padding-top: 60px;
-  }
-
-  a {
-  display: block;
-  padding: 10px;
-  }
-   a:link {color: rgb(7, 37, 169);}  
-   a:visited {color: #0a900a}  
-   a:hover {color: #FCFC0C}  
-   a:active {color: #895cd1}  
-  
-h6 {
-  text-align: left;
-  color: #895cd1;
-  position: absolute;
-  right: 0px;
-  width: 530px;
-  border-left: 3px solid #000000;
-  padding: 10px;
-  
+/* brand color palette */
+:root {
+  --primary: rgba(68, 88, 119, 1);
+  --secondary: rgba(146, 204, 206, 1);
+  --tertiary: rgba(49, 52, 61, 1);
+  --dark: rgba(28, 29, 33, 1);
+  --light: rgba(238, 238, 247, 1);
 }
 
 body {
-  margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  image-orientation: 180deg;
+  margin: 0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  background-color:var(--primary);
+  color:var(--primary);
+  line-height: 1.7;
 }
 
 h1,
@@ -87,6 +26,258 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+ margin: 0;
 }
 
+h1 span{
+  color:wheat
+}
+
+p {
+  margin: 0px;
+}
+
+
+header {
+  padding: 15px 6px 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(37, 37, 37);
+}
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:italic;
+  font-size:x-large;
+  background-color: rgb(29, 76, 218);
+  padding: 0px 0px 20px 5px;
+}
+
+.flex-surf{
+  background-image: url("https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?cs=srgb&dl=pexels-pixabay-158826.jpg&fm=jpg");
+}
+
+.flex-surf-report{
+  background-image: url("https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?cs=srgb&dl=pexels-pixabay-158826.jpg&fm=jpg");
+}
+header h1{
+  color: aquamarine;
+  background-color: var(--primary);
+  padding: 5px 1px 5px 6px;
+  margin: 0px;
+  font-size: 4vw;
+  line-height: 1.6px;
+}
+
+span.a {
+  display: inline; 
+  padding: 2.5px;
+  border: 2.5px solid blue;  
+  background-color: rgba(139, 216, 98, 0.454); 
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+nav a{
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-image: linear-gradient(270deg), var(--tertiary) 10%, var(--secondary)50%;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  font-size: 17px;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(13, 142, 217);
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+main{
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+/* .hero-banner{
+  background: rgb(68, 88, 120);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Arrow_east.svg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  padding: 2% 4%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+} */
+
+.hero-banner {
+  background: rgb(68, 88, 120);
+  background-image: url("./02-hero-bg.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  padding: 2% 4%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+​
+.hero-banner h2{
+  background-color: var(--secondary);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
+.page-wrapper{
+ max-width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.page-section{
+  margin: 27px 0px;
+  padding: 10px 0px;
+  display:flex;
+  /* flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between; */
+}
+
+.page-section h2{
+  text-align: right;
+  padding-right: 20px;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+/* .page-section div{
+ background: rgb(68, 88, 120);
+ background-image: url("https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?cs=srgb&dl=pexels-pixabay-158826.jpg&fm=jpg");
+ background-size: cover;
+ background-position: center;
+ background-blend-mode: soft-light;
+ min-height: 30vh;
+ padding: 2% 4%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ text-align: right;
+} */
+
+.page-section p{
+  border-left: 5px solid rgb(10, 10, 10); 
+  padding: 10px;
+}
+
+.flex-item {
+  background-image: url("https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?cs=srgb&dl=pexels-pixabay-158826.jpg&fm=jpg");
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+
+
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  padding: 23px;
+  font-size: 20px;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+
+.contact address a {
+  background-size: 100% 88%;
+}
+
+.contact address a:link {
+  color: green;
+}
+
+.contact address a:visited {
+  color: rgb(13, 142, 217);
+}
+
+.contact address a:hover {
+  color: red;
+}
+
+.contact address a:active {
+  color: yellow;
+}
+
+footer{
+  text-align: center;
+  color:green;
+}
